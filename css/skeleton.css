@@ -161,8 +161,8 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .post_1 {
-  margin-left: 160px;
-  margin-right: 160px;
+  margin-top: -10px;
+  margin-left: -50px;
   z-index: -500;
 }
 
@@ -170,23 +170,30 @@ p {
     position: absolute;
     background-color: #FFF;
     width: 300px;
-    height: 60px;
+    height: 70px;
     padding: 30px;
-    top: 65%;
-    left: 40%;
-    margin-top: -50px;
-    margin-left: -50px;
+    top: 67%;
+    left: 34%;
     text-align: center;
     z-index: 500;
 }
 
 /* Article
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+p.article_h3 {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 3.0rem; 
+  line-height: 0;  
+  letter-spacing: -.1rem;
+  margin-bottom: 0rem;
+}
 
 p.article_h5 { 
-  padding-top: .1em; 
+  padding-top: 0em; 
   padding-bottom: 0.5em;
-  font-size: 2.5rem; 
+  font-size: 2rem; 
   line-height: 0;  
   letter-spacing: -.05rem; 
   padding-top: 0em; 
@@ -197,12 +204,13 @@ p.article_h5 {
 }
 
 p.article_info {
+  margin-top: 0rem;
   line-height: 0;
 }
 
 p.article {
   margin-top: 0em;
-  margin-bottom: 5em; 
+  margin-bottom: 1.9em; 
 }
 
 
@@ -229,6 +237,38 @@ p.article {
   letter-spacing: 0;
   word-spacing: 20px;
   z-index: -100;
+}
+
+.nav2 {
+  position: absolute;
+  height: auto;
+  width: auto;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; 
+  font-size: 1.3rem; 
+  line-height: 0.3;  
+  letter-spacing: 0;
+  word-spacing: 20px;
+  top: 144.5%;
+  left: 22%;
+  z-index: 2000;
+}
+
+.nav3 {
+  position: absolute;
+  height: auto;
+  width: auto;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; 
+  font-size: 1.3rem; 
+  line-height: 0.3;  
+  letter-spacing: 0;
+  word-spacing: 20px;
+  top: 310%;
+  left: 22%;
+  z-index: 2000;
 }
 
 .search_box {
@@ -496,7 +536,10 @@ form {
   max-width: 100%;
   box-sizing: border-box; }
 .u-pull-right {
-  float: right; }
+  max-width: 200%;
+  margin: 1rem;
+  float: right;
+  box-sizing: border-box; }
 .u-pull-left {
   float: left; }
 
@@ -545,3 +588,33 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+@media screen and (max-width: 600px) {
+
+    .img_gone {display:none;}
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .search_gone {display:none;}
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .nav_gone {display:none;}
+
+}
+
+@media screen and (min-width: 405px) {
+
+    .nav_appear {display:none;}
+
+}
+
+@media screen and (max-width: 1250px) {
+
+    .box_gone {display:none;}
+
+}
