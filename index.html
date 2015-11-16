@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    $('#shrinkMe').click(function () {
+    console.log('click');
+    $(this).addClass('shrink');
+});
+  </script>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,13 +40,25 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
-<!-- Header -->
 
-  <div class="nav">
-    News
-    Students
-    Events
-    Submit
+
+<!-- Header -->
+  <div class="nav_gone">
+    <div class="nav">
+      News
+      Students
+      Events
+      Submit
+    </div>
+  </div>
+
+  <div class="nav_appear">
+    <div class="nav3">
+      News
+      Students
+      Events
+      Submit
+    </div>
   </div>
 
     <div class="nav_logo">
@@ -51,23 +71,30 @@
 
   </div>
 
-  <div class="search_box"> </div>
+    <div class="search_gone">
 
-  <div class="search">Search</div>
+      <div class="search_box"> </div>
+
+      <div class="search">Search</div>
+
+    </div>
 
 <!-- First Post -->
+<div class="img_gone">
+  <div class="post_1">
 
-<div class="post_1">
+    <img class="u-max-full-width" src="http://placehold.it/1400x500">
 
-  <img class="u-max-full-width" src="http://placehold.it/2000x800">
-
+  </div>
 </div>
 
-<div class="box">
+<div class="box_gone">
+    <div id="box2" class="box">
 
-<h2>Swarm: Like A Bee</h2>
-<p>By <a href="url">Cartell Thomas</a> August 26, 2015</p>
+      <h2>Swarm: Like A Bee</h2>
+      <p>By <a href="url">Cartell Thomas</a> August 26, 2015</p>
 
+    </div>
 </div>
 
  <!-- Posts -->
@@ -80,7 +107,7 @@
 
       <div class="one-half column" style="margin-top: 5%">
         <h6>Section<h6>
-        <h3>Headline</h3>
+            <h3>Headline</h3>
         <img class="u-max-full-width" src="http://placehold.it/450x200">
         <h5>This is a tagline</h5>
         <p>Lead by Ben Kutil, Graphic Design major Kit Tee redesigned the MICA Decker Library website during the first half of his course in Advanced Web Design. Kit and his ingenuity unveiled a clean and concise redevelopment of the Decker Library site and we're all forging on with an easier navigation system through Decker Library's impressive and enormous collection.</p>
@@ -123,7 +150,7 @@
     </div>
 
      <!-- Row 3 -->
-
+<div class="img_gone">
       <div class="row">
 
       <div class="one-third column" style="margin-top: 5%">
@@ -147,6 +174,7 @@
     </div>
 
   </div>
+</div>
 
  <!-- Footer -->
 
